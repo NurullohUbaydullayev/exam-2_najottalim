@@ -1,0 +1,55 @@
+//  Umumiy stillar 
+//  yani *,body...
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lexend Deca','Courier New', Courier, monospace;
+  /* background-color: #f2f2f2; */
+}
+
+img {
+  vertical-align: middle;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.container-small{
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.site-main {
+  flex-grow: 1;
+}
