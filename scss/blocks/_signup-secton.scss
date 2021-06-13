@@ -1,0 +1,86 @@
+.signup-section{}
+
+.signup-section .container{
+    position: relative;
+    background-color: #495567;
+}
+
+.signup-section .container::before{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 998px;
+    height: 158px;
+    background-image: url("../../images/signup-bgimg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    content: '';
+}
+
+.signup-section .container-small{
+    display: flex;
+    justify-content: space-between;
+    padding: 102px 40px;
+}
+
+.signup__heading{
+    width: 100%;
+    max-width: 415px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #FFFFFF;
+}
+
+.online-shopping-list{
+    width: 100%;
+    max-width: 359px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+@media only screen and (max-width: 891px){
+    .signup-section .container-small{
+        flex-direction: column;
+    }
+
+    .signup__heading{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media only screen and (max-width:561px){
+    .signup__heading{
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -1.42857px;
+    }
+
+    .online-shopping-list{
+        justify-content: center;
+    }
+
+    .shopping-list__item+.shopping-list__item{
+        margin-left: 12px;
+    }
+
+    .shopping__item__link img{
+        width: 100%;
+        max-width: 113px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:376px){
+    .signup-section .container-small{
+        padding: 88px 32px;
+    }
+}

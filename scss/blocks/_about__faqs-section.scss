@@ -1,0 +1,234 @@
+.faqs-section .container-small{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 160px;
+}
+
+.how-it-works{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.how-works__heading{
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+    color: #495567;
+}
+
+.how-works__list{
+    width: 100%;
+    max-width: 730px;
+    margin-left: auto;
+    list-style: none;
+}
+
+.how-works__list__item{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.how-works__item__btn{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    padding: 32px 40px;
+    border: none;
+    text-align: left;
+}
+
+.how-works__item__btn::before{
+    position: absolute;
+    top: 42px;
+    right: 40px;
+    width: 18px;
+    height: 13px;
+    background-image: url("../images/arrow-down-btn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // transform: rotateX(180deg);
+    content: '';
+}
+
+.how-works__item__heading{
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+
+
+.faqs-heading{
+    margin-bottom: 64px;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+
+.how-works__item__paragraph{
+    display: none;
+}
+
+.safe-driving{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.safe-driving__item__paragraph{
+    display: none;
+}
+
+.safe-driving__heading{
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78571px;
+    color: #495567;
+}
+
+.safe-driving__list{
+    width: 100%;
+    max-width: 730px;
+    list-style: none;
+}
+
+.safe-driving__list__item{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.safe-driving__item__btn{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    padding: 32px 40px;
+    border: none;
+    text-align: left;
+}
+
+.safe-driving__item__btn::before{
+    position: absolute;
+    top: 42px;
+    right: 40px;
+    width: 18px;
+    height: 13px;
+    background-image: url("../images/arrow-down-btn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // transform: rotateX(180deg);
+    content: '';
+}
+
+.safe-driving__item__heading{
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+
+.safe-driving__item__paragraph{
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+
+.how-works__item__paragraph{
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+}
+
+.how-works__list__item--active .how-works__item__btn::before{
+    transform: rotateX(180deg);
+} 
+
+
+.how-works__list__item--active .how-works__item__paragraph{
+    display: block;
+    margin-top: 24px;
+}
+
+.safe-driving__btn--active{}
+
+@media only screen and (max-width:801px){
+    .how-it-works{
+        flex-direction: column;
+    }
+
+    .how-works__heading{
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .safe-driving{
+        flex-direction: column;
+    }
+
+    .safe-driving__heading{
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (max-width:511px){
+    .faqs-section .container-small{
+        padding: 0 32px;
+    }
+
+    .faqs-heading{
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .how-works__heading{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .how-works__item__heading{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .safe-driving__heading{
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .safe-driving__item__heading{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .how-works__item__paragraph{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .safe-driving__item__paragraph{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
